@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="form.css" />
+    <link rel="stylesheet" href="post.css" />
+    <link rel="stylesheet" href="auth.css" />
+
+
+</head>
+<body>
+    <div class="container">
+        <!--HEADER-->
+        <header class="header">
+            <h1 class="logo"><a href="#">twitter</a></h1>
+            <nav>
+                <ul class="main-nav">
+                    <li>
+                        <a href="#">Login</a>
+                    </li>
+                    <li>
+                        <a href="#">Register</a>
+                    </li>
+                    <li>
+                        <span href="#" class="user-name">Hello, Quan</span>
+                    </li>
+                    <li>
+                        <a href="#">Sign out</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!--SECTION-->
+        <section class="form-section">
+            <form class="form">
+                <textarea
+                    type="text"
+                    name="content"
+                    id="content"
+                    class="content"
+                    placeholder="What's happening"
+                ></textarea>
+                <button class="btn" type="submit">Tweet</button>
+            </form>
+        </section>
+        <!--POST-->
+        <section class="post-section">
+            <div class="post-list">
+                <div class="post-item">
+                    <div class="post-content">
+                        <p> 
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime ducimus quisquam non minima voluptatibus eveniet exercitationem perspiciatis voluptas officia nesciunt assumenda quidem harum, atque saepe, placeat aliquid suscipit amet unde.
+                        </p>
+                        <div class="post-footer">
+                            <div class="post-infors">
+                                <span>by Quan nguyen</span>
+                                <span>Date: 15/11/2022</span>
+                            </div>
+                            <div class="post-edit-delete">
+                                <span>Edit</span>
+                                <span>Delete</span>
+                                <span class="delete-question">
+                                    Are you sure?
+                                </span>
+                                <span>Yes</span>
+                                <span>No</span>
+                            </div>
+                        </div>
+                        <div class="post-edit-form">
+                            <form class="edit-form">
+                                <textarea type="text" name="content" id="content" class="content" placeholder="What's happening"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque recusandae possimus expedita et pariatur inventore, enim cum laudantium? Asperiores soluta esse, non vero magnam voluptate magni nesciunt aperiam minima et?
+                                </textarea>
+                                <div class="btn-container">
+                                    <button class="btn" type="button">Update</button>
+                                    <button class="btn" type="button">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--LOGIN-->
+        <section class="auth-container">
+            <form class="auth-form">
+                <h2>Enter Your Account</h2>
+                <div class="error-message">
+                    Error: Your Password is not correct
+                </div>
+                <input type="email" name="email" id ="" required placeholder="Email" />
+                <input type="password" name="password" id ="" required placeholder="Password" />
+                <button class="btn" type="submit">Login</button>
+            </form>
+        </section>
+        <!--REGISTER-->
+        <section class="auth-container">
+            <form class="auth-form">
+                <h2>Register New Account</h2>
+                <div class="error-message">
+                    Error: Your Password is not correct
+                </div>
+                <input type="text" name="Name" id="" required placeholder="Name" />
+                <input type="email" name="email" id="" required placeholder="Email" />
+                <input type="password" name="password" id="" required placeholder="Password" />
+                <button class="btn" type="submit">Register</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
